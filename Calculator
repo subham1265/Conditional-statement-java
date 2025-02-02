@@ -20,8 +20,11 @@ public class calculator {
         
         switch(Operator){
             case '+' : System.out.println("Result:"+(a+b) );
+            break;
             case '-' : System.out.println("Result:" + (a-b));
+            break;
             case '*' : System.out.println("Result:"+(a*b));
+            break;
             case '/' : 
                 if(b==0){
                     System.out.println("Invaild statment");
@@ -29,6 +32,7 @@ public class calculator {
                 else{
                     System.out.println("Result:"+(a/b));
                 }
+            break;   
             case '%':
                 if(b==0){
                     System.out.println("Invaild statment");
