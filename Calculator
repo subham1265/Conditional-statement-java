@@ -1,0 +1,46 @@
+package hello.world;
+
+import java.util.*;
+
+/**
+ *
+ * @author subha
+ */
+public class calculator {
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the value a =");
+        int a=sc.nextInt();
+        
+        System.out.println("Enter the value b =");
+        int b=sc.nextInt();
+     
+        System.out.println(" Choose to operation performed +,-,*,/,%");
+        char Operator=sc.next().charAt(0);
+        
+        switch(Operator){
+            case '+' : System.out.println("Result:"+(a+b) );
+            case '-' : System.out.println("Result:" + (a-b));
+            case '*' : System.out.println("Result:"+(a*b));
+            case '/' : 
+                if(b==0){
+                    System.out.println("Invaild statment");
+                }
+                else{
+                    System.out.println("Result:"+(a/b));
+                }
+            case '%':
+                if(b==0){
+                    System.out.println("Invaild statment");
+                }
+                else{
+                    System.out.println("Result:"+(a%b));
+                }
+                
+        }
+        
+        
+        
+    }
+    
+}
