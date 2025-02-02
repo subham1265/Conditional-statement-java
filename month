@@ -1,0 +1,26 @@
+package hello.world;
+import java.util.*;
+
+/**
+ *
+ * @author subha
+ */
+public class month {
+    public static void main(String[] arg){
+        Scanner sc= new Scanner(System.in);
+        
+        System.out.println();
+        int  month=sc.nextInt();
+        
+        switch(month){
+            case 1: System.out.println("January");
+            break;
+            case 2: System.out.println("february");
+            break;
+            default : System.out.println("Invalid Input");
+            
+        }
+        
+    }
+    
+}
